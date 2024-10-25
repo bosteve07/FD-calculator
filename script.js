@@ -11,10 +11,10 @@ function calculateTheInterest(event) {
         alert("Please fill all the input fields.");
     } else {
         // Computation process
-        const compute = (principal * rate * tenure) / 100;
-        const total = compute + principal;
+        const compute = principal + (principal * rate * tenure) / 100;
+        // const total = compute + principal;
         document.getElementById('result').innerHTML = `The Maturity Amount: N${compute.toFixed(2)}`;
-        document.getElementById('total').innerHTML = `The Total Payable: N${total.toFixed(2)}`;
+        // document.getElementById('total').innerHTML = `The Total Payable: N${total.toFixed(2)}`;
     }
 }
 
